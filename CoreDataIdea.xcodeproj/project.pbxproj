@@ -13,6 +13,10 @@
 		B67F104D1F3F240C00904106 /* CoreDataIdea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B67F104B1F3F240C00904106 /* CoreDataIdea.xcdatamodeld */; };
 		B67F104F1F3F240C00904106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67F104E1F3F240C00904106 /* Assets.xcassets */; };
 		B67F10521F3F240C00904106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67F10501F3F240C00904106 /* LaunchScreen.storyboard */; };
+		B68B706F1F3F4AC900016577 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B706E1F3F4AC900016577 /* CoreDataManager.swift */; };
+		B68B70711F3F573F00016577 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70701F3F573F00016577 /* TableViewController.swift */; };
+		B68B70751F3F643900016577 /* timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70741F3F643900016577 /* timeAgo.swift */; };
+		B68B70771F3FDC6400016577 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70761F3FDC6400016577 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B67F104E1F3F240C00904106 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67F10511F3F240C00904106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B67F10531F3F240C00904106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68B706E1F3F4AC900016577 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B68B70701F3F573F00016577 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B68B70741F3F643900016577 /* timeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timeAgo.swift; sourceTree = "<group>"; };
+		B68B70761F3FDC6400016577 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				B67F10441F3F240C00904106 /* AppDelegate.swift */,
 				B67F10461F3F240C00904106 /* ViewController.swift */,
 				B67F10481F3F240C00904106 /* Main.storyboard */,
+				B68B70761F3FDC6400016577 /* DetailViewController.swift */,
+				B68B70701F3F573F00016577 /* TableViewController.swift */,
 				B67F104E1F3F240C00904106 /* Assets.xcassets */,
 				B67F10501F3F240C00904106 /* LaunchScreen.storyboard */,
 				B67F10531F3F240C00904106 /* Info.plist */,
 				B67F104B1F3F240C00904106 /* CoreDataIdea.xcdatamodeld */,
+				B68B706E1F3F4AC900016577 /* CoreDataManager.swift */,
+				B68B70741F3F643900016577 /* timeAgo.swift */,
 			);
 			path = CoreDataIdea;
 			sourceTree = "<group>";
@@ -99,7 +111,7 @@
 				TargetAttributes = {
 					B67F10401F3F240C00904106 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -139,9 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68B70751F3F643900016577 /* timeAgo.swift in Sources */,
 				B67F10471F3F240C00904106 /* ViewController.swift in Sources */,
 				B67F10451F3F240C00904106 /* AppDelegate.swift in Sources */,
+				B68B706F1F3F4AC900016577 /* CoreDataManager.swift in Sources */,
+				B68B70711F3F573F00016577 /* TableViewController.swift in Sources */,
 				B67F104D1F3F240C00904106 /* CoreDataIdea.xcdatamodeld in Sources */,
+				B68B70771F3FDC6400016577 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +282,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreDataIdea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.CoreDataIdea";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -278,10 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoreDataIdea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hi-yuki.CoreDataIdea";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -305,6 +325,7 @@
 				B67F10581F3F240C00904106 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
