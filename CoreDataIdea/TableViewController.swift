@@ -13,6 +13,9 @@ class TableViewController: UITableViewController, UISearchBarDelegate{
     @IBOutlet var ideaTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+
+    
+    
     var ideaList : [Idea] = []
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -101,14 +104,16 @@ class TableViewController: UITableViewController, UISearchBarDelegate{
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellTableViewCell
         
         let ideaItem = ideaList[indexPath.row]
         
-        cell.textLabel?.text = ideaItem.ideaTxt
+        cell.ideaLabel.text = ideaItem.ideaTxt
         //cell.ideaLabel.text = ideaItem.idea
         //cell.keywordLabel.text = ideaItem.keyword
-        //cell.createLabel.text = timeAgoSinceDate(ideaItem.create! as Date)
+        cell.createLabel.text = timeAgo.sinceDate(ideaItem.createDate! as Date)
+        
+        //timeAgo.SinceDate(ideaItem.create! as Date)
         
         return cell
     }

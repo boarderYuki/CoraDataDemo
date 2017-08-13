@@ -114,14 +114,43 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="skM-eJ-egd">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="skM-eJ-egd" customClass="CellTableViewCell" customModule="CoreDataIdea" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="skM-eJ-egd" id="VVb-jh-HT7">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-xC-7Ef">
+                                            <rect key="frame" x="20" y="11" width="347" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwN-Cx-RYr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSY-De-WLs">
+                                                    <rect key="frame" x="316" y="0.0" width="31" height="22"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="YPY-rH-V0t"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gGS-xC-7Ef" firstAttribute="leading" secondItem="VVb-jh-HT7" secondAttribute="leadingMargin" constant="12" id="RVj-lP-sa0"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gGS-xC-7Ef" secondAttribute="trailing" id="l2Q-WX-aWv"/>
+                                        <constraint firstItem="gGS-xC-7Ef" firstAttribute="centerY" secondItem="VVb-jh-HT7" secondAttribute="centerY" id="mzh-wc-xCY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="createLabel" destination="cSY-De-WLs" id="kc6-qd-SkB"/>
+                                    <outlet property="ideaLabel" destination="xwN-Cx-RYr" id="E69-Hu-F8P"/>
                                     <segue destination="OLM-az-FMm" kind="show" identifier="ShowIdea" id="bfE-LN-nTe"/>
                                 </connections>
                             </tableViewCell>
@@ -138,7 +167,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY0-J4-GKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476" y="840"/>
+            <point key="canvasLocation" x="2476" y="839.28035982008998"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="wuE-fe-KSY">

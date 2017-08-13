@@ -17,6 +17,7 @@
 		B68B70711F3F573F00016577 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70701F3F573F00016577 /* TableViewController.swift */; };
 		B68B70751F3F643900016577 /* timeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70741F3F643900016577 /* timeAgo.swift */; };
 		B68B70771F3FDC6400016577 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B70761F3FDC6400016577 /* DetailViewController.swift */; };
+		B68B707D1F40396F00016577 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B707C1F40396F00016577 /* CellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B68B70701F3F573F00016577 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B68B70741F3F643900016577 /* timeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = timeAgo.swift; sourceTree = "<group>"; };
 		B68B70761F3FDC6400016577 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B68B707C1F40396F00016577 /* CellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B67F10441F3F240C00904106 /* AppDelegate.swift */,
 				B67F10461F3F240C00904106 /* ViewController.swift */,
 				B67F10481F3F240C00904106 /* Main.storyboard */,
+				B68B707C1F40396F00016577 /* CellTableViewCell.swift */,
 				B68B70761F3FDC6400016577 /* DetailViewController.swift */,
 				B68B70701F3F573F00016577 /* TableViewController.swift */,
 				B67F104E1F3F240C00904106 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				B67F10451F3F240C00904106 /* AppDelegate.swift in Sources */,
 				B68B706F1F3F4AC900016577 /* CoreDataManager.swift in Sources */,
 				B68B70711F3F573F00016577 /* TableViewController.swift in Sources */,
+				B68B707D1F40396F00016577 /* CellTableViewCell.swift in Sources */,
 				B67F104D1F3F240C00904106 /* CoreDataIdea.xcdatamodeld in Sources */,
 				B68B70771F3FDC6400016577 /* DetailViewController.swift in Sources */,
 			);
